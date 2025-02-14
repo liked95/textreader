@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Text Extractor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Upload a File to Extract Text</h1>
+    
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">Upload</button>
+
+    <!-- Loading Animation -->
+    <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Processing file...</p>
+    </div>
+
+    <h3>Extracted Text:</h3>
+    <div id="result">No text extracted yet.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
