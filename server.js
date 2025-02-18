@@ -78,7 +78,8 @@ app.post("/process-attachments", async (req, res) => {
             res.status(500).send("Error processing attachments: " + error.message);
         }
     } else {
-        return res.status(400).send("Invalid or missing attachments object.");
+        console.error("Invalid or missing attachments object.");
+        res.json({ content: "" });
     }
 });
 
